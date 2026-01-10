@@ -12,21 +12,23 @@
     <!-- Mobile app container -->
     <div class="mobile-container">
 
-        <!-- Header -->
-        <header>
-            <h1>Tyne & Wear Travel</h1>
-            <p>"Improving our health one step at a time"</p>
-        </header>
+        <!-- Header with search bar and user points -->
+        <header class="main-header">
+            <!-- Search bar  -->
+            <div class="search">
+                <svg id="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" stroke-width="1.5"
+                    stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+                <input class="textbox" type="text" placeholder="Search ...">
+            </div>
 
-        <!-- Search bar -->
-        <div class="search">
-            <svg id="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" stroke-width="1.5"
-                stroke="currentColor" class="size-5">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
-            <input class="textbox" type="text" placeholder="Search ...">
-        </div>
+            <!-- User points/level button -->
+            <button class="user-points" type="button">
+                276pts - Level 3
+            </button>
+        </header>
 
         <!-- Quick Stats -->
         <section>
