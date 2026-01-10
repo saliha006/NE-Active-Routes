@@ -1,6 +1,7 @@
 body {
     background-color: rgb(255, 255, 255) !important;
     font-size: 20px;
+    padding-bottom: 90px; /* Space for fixed navigation bar */
 }
 
 h1,
@@ -22,32 +23,63 @@ p {
 /* whole search bar container */
 .search {
     border: 2px solid rgb(0, 0, 0);
-    border-bottom: 4px solid rgb(0,0,0);
-    border-right: 4px solid rgb(0,0,0);
+    border-bottom: 4px solid rgb(0, 0, 0);
+    border-right: 4px solid rgb(0, 0, 0);
     display: flex;
-    align-items: left;
-    justify-content: left;
-    height: 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 /* svg search icon */
 #icon {
-    width: 24px;
-    height: 24px;
-    color: rgb(2, 6, 29);
+    width: 31px;
+    height: 31px;
+    color: rgb(4, 11, 49);
+    margin-left: -7px;
 }
 
 /* whole search bar input */
 .textbox {
+    font-family: 'Courier New', 'Arial', 'Times New roman';
+    font-size: 16px;
     flex-grow: 1;
     padding-left: 0px;
-    width: 1fr;
     height: auto;
-    margin-left: 0px;
+    margin-left: 10px;
     border: none;
     outline: none;
 }
 
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 5px;
+    align-items: center;
+}
+
+/* individual cards for stats */
+.stats {
+    padding: 2em;
+    border: 1px solid rgb(76, 21, 165);
+    border-radius: 8px;
+    background-color: rgb(43, 16, 141);
+    text-align: center;
+}
+
+
+/*routes grids */
+.route-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* makes each grid 150px, if theres extra space it fills up
+     until next column can fit*/
+    gap: 10px;
+    justify-content: center;
+}
+
+
+/* routes container */
 .grid {
     padding: 2em;
     border: 1px solid rgb(207, 67, 42);
@@ -56,23 +88,40 @@ p {
     text-align: center;
 }
 
-.grid-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    justify-content: center;
-}
 
 .nav-bar {
-    position: sticky;
-    background-color: rgb(37, 63, 192);
-    color: rgb(139, 27, 27);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(60, 25, 156);
+    color: bisque;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 50%;
-    width: 45rem;
+    height: 70px;
+    width: 100%;
+    padding: 10px 0;
 }
+
+/* SVG icons in navigation bar */
+.nav-bar svg {
+    width: 32px;
+    height: 32px;
+    flex: 1;
+}
+
+
+/* 
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 5px;
+    align-items: center;
+
+
+
+    /*
 
 /* for normal selector */
 /* # for id selector */
