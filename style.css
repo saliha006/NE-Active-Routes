@@ -72,7 +72,6 @@ p {
     text-align: center;
     flex-shrink: 1;
     min-width: 0;
-    overflow: hidden;
     max-width: 140px;
 }
 
@@ -97,6 +96,66 @@ p {
     background: transparent;
 }
 
+.filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: rgb(209, 208, 208);
+    border: 2px solid rgb(19, 19, 19);
+    border-radius: 22px;
+    padding: 8px 16px;
+    margin: 10px;
+    font-family: 'Arial', 'sans-serif';
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+/* this changes colour of the filter button when hovered over */
+.filter-button:hover {
+    background-color: rgb(190, 189, 189);
+}
+
+/* Filter button icon's properties */
+.filter-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+
+.create-routes-floating-button {
+    position: fixed;
+    bottom: 95px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background-color: rgb(78, 78, 78);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-family: 'Arial', 'sans-serif';
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 8px rgba(7, 7, 7, 0.3);
+}
+
+/* this changes colour of the create routes floating button when hovered over */
+.create-routes-floating-button:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.floating-button-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
 /*routes grid contianer */
 .route-grid {
     display: grid;
@@ -104,19 +163,6 @@ p {
     gap: 10px;
     padding: 10px;
     width: 100%;
-}
-
-/* Changes code at 449px and switches grid to 1 column when screen is too narrow to fit stars rating in the 2-column layout */
-@media (max-width: 449px) {
-    .route-grid {
-        grid-template-columns: 1fr;
-    }
-    .route-image {
-        width: 85px;
-    }
-    .route-content {
-        padding: 10px;
-    }
 }
 
 
@@ -277,6 +323,19 @@ p {
     
     .route-content {
         padding: 8px;
+    }
+}
+
+/* Changes code at 449px and switches grid to 1 column when screen is too narrow to fit stars rating in the 2-column layout */
+@media (max-width: 449px) {
+    .route-grid {
+        grid-template-columns: 1fr;
+    }
+    .route-image {
+        width: 85px;
+    }
+    .route-content {
+        padding: 10px;
     }
 }
 
