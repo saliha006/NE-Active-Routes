@@ -1,4 +1,4 @@
-/* Universal css proprities across the landing page including the hadingss, html, boddy and paragrpahas  */
+/* global css proprities across the landing page including the hadingss, html, boddy and paragrpahas  */
 *,
 *::before,
 *::after {
@@ -12,7 +12,7 @@ html {
 body {
     background-color: rgb(255, 255, 255) !important;
     font-size: 20px;
-    padding-bottom: 100px; /* Space for fixed nav bar */
+    padding-bottom: 80px; /* Space for fixed nav bar */
     margin: 0;
 }
 
@@ -36,7 +36,7 @@ p {
 /* Hero Section */
 .hero-section {
     width: 100%;
-    background-color: rgb(96, 79, 172);
+    background-color: rgb(231, 229, 204);
     padding: 25px 13px;
     margin: 0;
 }
@@ -66,7 +66,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background-color: rgb(209, 208, 208);
+    background-color: rgb(196, 83, 45);
     border: 2px solid rgb(19, 19, 19);
     border-radius: 19px; /* makes the infrastructure button more rounded */
     padding: 18px 16px;
@@ -91,8 +91,8 @@ p {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    background-color: rgb(187, 187, 187);
-    border: 2px solid rgb(255, 136, 0);
+    background-color: rgb(177, 36, 36);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     padding: 3px 16px;
     margin: -15px 0 0 0;
@@ -107,10 +107,10 @@ p {
 
 /* Impacted routes starburst icon */
 .impacted-icon {
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
     flex-shrink: 0;
-    color: rgb(190, 36, 36);
+    color: rgb(0, 0, 0);
 }
 
 /* Arrow icon in impacted routes button */
@@ -151,7 +151,7 @@ p {
     border: 2px solid rgb(94, 93, 93);
     border-bottom: 4px solid rgb(94, 93, 93);
     border-right: 4px solid rgb(94, 93, 93);
-    background-color: rgb(209, 208, 208);
+    background-color: rgb(152, 166, 185);
     color: rgb(0, 0, 0);
     font-family: 'Arial', 'sans-serif';
     font-size: 14px;
@@ -189,7 +189,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background-color: rgb(209, 208, 208);
+    background-color: rgb(152, 166, 185);
     border: 2px solid rgb(19, 19, 19);
     border-radius: 22px;
     padding: 8px 16px;
@@ -218,14 +218,14 @@ p {
     align-items: center;
     justify-content: center;
     gap: 4px;
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(89, 143, 13);
     border: 2px solid rgb(0, 0, 0);
     border-radius: 4px;
     padding: 10px 12px;
     font-family: 'Arial', 'sans-serif';
     font-size: 12px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(253, 250, 230);
     box-shadow: 0 2px 8px rgba(7, 7, 7, 0.3);
     z-index: 1000; /* this makes sure the button is above teh other elements when scrolling */
 }
@@ -240,7 +240,7 @@ p {
 /* Discover Routes Section */
 .discover-routes-section {
     width: 100%;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(28, 65, 167);
     margin: 5px 0 0 0;
     padding: 12px 10px;
     display: flex;
@@ -250,7 +250,7 @@ p {
 }
 
 .discover-routes-text {
-    color: rgb(255, 255, 255);
+    color: rgb(253, 250, 230);
     font-family: 'Arial', 'sans-serif';
     font-size: 16px;
     font-weight: bold;
@@ -276,7 +276,7 @@ p {
     flex-direction: row;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
-    background-color: rgb(103, 109, 158); 
+    background-color: rgb(255, 255, 255); 
     overflow: hidden;
     min-height: 120px;
 }
@@ -285,11 +285,10 @@ p {
 /* placeholder for route card images */
 .route-image {
     width: 75px;
-    background-color: rgb(158, 158, 158); 
+    background-color: rgb(152, 166, 185); 
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid rgb(114, 114, 114);
 }
 
 /* Image placeholder css properties */
@@ -317,18 +316,18 @@ p {
     margin: 0 0 5px 0;
     text-align: left;
     font-family: 'Arial', 'sans-serif';
-    overflow-wrap: break-word; /* Allows long words to break and wrap */
+    overflow-wrap: break-word; /* Allows long words to wrap under when screen gets narrower */
     line-height: 1.3;
 }
 
 /* Route details text */
 .route-content p {
     font-size: 12px;
-    color: rgb(60, 60, 60);
+    color: rgb(0, 0, 0);
     margin: 0 0 8px 0;
     text-align: left;
     font-family: 'Arial', 'sans-serif';
-    overflow-wrap: break-word; /* Allows text to wrap when needed */
+    overflow-wrap: break-word; /* Allows text to wrap when screen size gets narrower */
 }
 
 /* route Icons container */
@@ -338,22 +337,22 @@ p {
     gap: 5px;
     align-items: center;
     margin-top: auto;
-    min-width: 0; /* Allows container to shrink below content size */
-    width: 100%; /* Ensures container takes available space for proper wrapping */
+    min-width: 0;
+    width: 100%; 
 }
 
 /* Individual icon styling */
 .route-icons span {
     font-size: 18px;
     display: inline-block;
-    white-space: nowrap; /* Keeps all stars in one span together, but allows span itself to wrap */
-    flex-shrink: 0; /* Prevents spans from being compressed, allows them to wrap instead */
+    white-space: nowrap; /* Keeps all stars in one line togetherinstead of getting compressed */
+    flex-shrink: 0;
 }
 
 /* Events Section */
 .events-section {
     width: 85%;
-    background-color: rgb(121, 121, 121);
+    background-color: rgb(58, 110, 182);
     padding: 15px 10px;
     margin: 18px auto;
 }
@@ -363,9 +362,22 @@ p {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 6px;
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(28, 65, 167);
     padding: 10px;
     border-radius: 4px;
+}
+
+.events-title-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.calendar-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    color: rgb(253, 250, 230);
 }
 
 .events-title {
@@ -373,6 +385,7 @@ p {
     font-weight: bold;
     text-align: left;
     margin: 0;
+    color: rgb(253, 250, 230);
 }
 
 .view-all-button {
@@ -386,7 +399,7 @@ p {
 
 /* container for the description of events under event title */
 .event-types-bar {
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(28, 65, 167);
     padding: 8px 10px;
     margin-bottom: 12px;
 }
@@ -395,9 +408,11 @@ p {
     font-size: 14px;
     text-align: left;
     margin: 0;
-    
+    color: rgb(253, 250, 230);
 }
 
+
+/* event 1 card container */
 .event-card {
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
@@ -436,13 +451,13 @@ p {
     text-align: left;
     margin: 0;
     font-style: normal;
-    color: rgb(39, 39, 39);
+    color: rgb(0, 0, 0);
 }
 
 /* Challenges Section */
 .challenges-section {
     width: 100%;
-    background-color: rgb(121, 121, 121);
+    background-color: rgb(255, 255, 255);
     padding: 15px 10px;
     margin: 0;
 }
@@ -452,7 +467,7 @@ p {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(28, 65, 167);
     padding: 10px;
     border-radius: 6px;
 }
@@ -467,6 +482,7 @@ p {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+    color: rgb(253, 250, 230);
 }
 
 .challenges-title {
@@ -474,6 +490,7 @@ p {
     font-weight: bold;
     text-align: left;
     margin: 0;
+    color: rgb(253, 250, 230);
 }
 
 .view-more-button {
@@ -492,7 +509,7 @@ p {
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
     border-radius: 2px;
-    overflow: hidden;
+    overflow: hidden; /* hides content that overflows when screen gets smaller */
     width: 300px;
     margin: 0 auto;
 }
@@ -500,12 +517,13 @@ p {
 .challenge-image {
     width: 100%;
     height: 190px;
-    background-color: rgb(158, 158, 158);
+    background-color: rgb(152, 166, 185);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* specifies placeholder within the challenge image div contaainer */
 .challenge-image span {
     font-size: 85px;
     font-weight: bold;
@@ -539,7 +557,7 @@ p {
     display: flex;
     align-items: center;
     gap: 4px;
-    background-color: rgb(209, 208, 208);
+    background-color: rgb(152, 166, 185);
     border: 2px solid rgb(19, 19, 19);
     border-radius: 4px;
     padding: 6px 12px;
@@ -554,9 +572,10 @@ p {
     flex-shrink: 0;
 }
 
+/* bike repair helpline section container */
 .bike-helpline {
     width: 100%;
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(177, 36, 36);
     padding: 15px 20px;
     margin: 0;
     display: flex;
@@ -566,10 +585,11 @@ p {
     box-sizing: border-box;
     position: sticky;
     bottom: 80px;
+    z-index: 998;
 }
 
 .helpline-text {
-    color: rgb(255, 255, 255);
+    color: rgb(253, 250, 230);
     font-size: 16px;
     font-weight: bold;
     text-align: left;
@@ -581,7 +601,7 @@ p {
 .helpline-icon {
     width: 32px;
     height: 32px;
-    color: rgb(255, 255, 255);
+    color: rgb(253, 250, 230);
     flex-shrink: 0;
 }
 
@@ -591,8 +611,8 @@ p {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgb(60, 25, 156);
-    color: bisque;
+    background-color: rgb(28, 65, 167);
+    color: rgb(235, 235, 211);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -610,7 +630,7 @@ p {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: bisque;
+    color: rgb(235, 235, 211);
     flex: 1;
     gap: 4px;
 }
@@ -619,14 +639,14 @@ p {
 .nav-bar svg {
     width: 28px;
     height: 28px;
-    stroke: bisque;
+    stroke: rgb(253, 250, 230);
 }
 
 /* Navigation bar label's text under the icons */
 .nav-label {
     font-size: 11px;
     text-align: center;
-    color: bisque;
+    color: rgb(253, 250, 230);
     font-family: 'Arial', 'sans-serif';
 }
 
@@ -674,7 +694,3 @@ p {
         padding: 10px;
     }
 }
-
-/* for normal selector */
-/* # for id selector */
-/* . for class selector */
