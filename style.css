@@ -1,4 +1,4 @@
-/* Universal sizing across the website */
+/* Universal css proprities across the landing page including the hadingss, html, boddy and paragrpahas  */
 *,
 *::before,
 *::after {
@@ -50,6 +50,76 @@ p {
     font-style: italic;
     font-weight: bold;
 }
+
+/* Infrastructure Projects Section */
+.infrastructure-section {
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* Ongoing Infrastructure Projects Button */
+.infrastructure-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: rgb(209, 208, 208);
+    border: 2px solid rgb(19, 19, 19);
+    border-radius: 19px; /* makes the infrastructure button more rounded */
+    padding: 18px 16px;
+    margin: 0;
+    font-family: 'Arial', 'sans-serif';
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    }
+
+
+.infrastructure-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+
+.impacted-routes-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgb(187, 187, 187);
+    border: 2px solid rgb(255, 136, 0);
+    border-radius: 8px;
+    padding: 3px 16px;
+    margin: -15px 0 0 0;
+    font-family: 'Arial', 'sans-serif';
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    width: 60%;
+    margin-left: 20%;
+    z-index: 999;
+}
+
+/* Impacted routes starburst icon */
+.impacted-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: rgb(190, 36, 36);
+}
+
+/* Arrow icon in impacted routes button */
+.arrow-icon {
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+}
+
 /* Main header with search bar and user points bar */
 .main-header {
     display: flex;
@@ -131,11 +201,6 @@ p {
     flex-shrink: 0;
 }
 
-/* this changes colour of the filter button when hovered over */
-.filter-button:hover {
-    background-color: rgb(190, 189, 189);
-}
-
 /* Filter button icon's properties */
 .filter-icon {
     width: 16px;
@@ -148,7 +213,6 @@ p {
     position: fixed;
     bottom: 95px;
     right: 10px;
-    z-index: 1000; /* this makes sure the button is above teh other elements when scrolling */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,12 +227,9 @@ p {
     font-weight: bold;
     color: rgb(255, 255, 255);
     box-shadow: 0 2px 8px rgba(7, 7, 7, 0.3);
+    z-index: 1000; /* this makes sure the button is above teh other elements when scrolling */
 }
 
-/* this changes colour of the create routes floating button when hovered over */
-.create-routes-floating-button:hover {
-    background-color: rgb(50, 50, 50);
-}
 
 .floating-button-icon {
     width: 20px;
@@ -336,7 +397,6 @@ p {
     width: 100%;
     max-width: 100vw; /* this ensures that the navigation bar does not exceed the viewport width */
     padding: 8px 0;
-    box-sizing: border-box;
     overflow: hidden; /* hides overflowing content */
 }
 
@@ -365,7 +425,6 @@ p {
     text-align: center;
     color: bisque;
     font-family: 'Arial', 'sans-serif';
-    text-transform: lowercase;
 }
 
 /* On small screens, reduce main components to fit the screen */
