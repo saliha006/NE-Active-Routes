@@ -32,6 +32,24 @@ p {
     font-style: italic;
 }
 
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    background-color: rgb(96, 79, 172);
+    padding: 25px 13px;
+    margin: 0;
+}
+
+/* Allows you to chnage quote text proprieties in hero section   */
+.hero-quote {
+    color: rgb(0, 0, 0);
+    font-family:'sans-serif', 'Times New roman';
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
 /* Main header with search bar and user points bar */
 .main-header {
     display: flex;
