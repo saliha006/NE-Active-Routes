@@ -19,14 +19,14 @@ body {
 h1,
 h2,
 h3 {
-    color: rgb(201, 189, 171);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Arial', 'sans-serif','Times New roman';
     font-weight: Bold;
 }
 
 p {
-    color: bisque;
+    color: rgb(0, 0, 0);
     font-family: 'Arial', 'sans-serif','Times New roman';
     text-align: center;
     font-style: italic;
@@ -350,6 +350,117 @@ p {
     flex-shrink: 0; /* Prevents spans from being compressed, allows them to wrap instead */
 }
 
+/* Challenges Section */
+.challenges-section {
+    width: 100%;
+    background-color: rgb(121, 121, 121);
+    padding: 15px 10px;
+    margin: 0;
+}
+
+.challenges-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.challenges-title-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trophy-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.challenges-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.view-more-button {
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.challenge-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.challenge-image {
+    width: 100%;
+    height: 190px;
+    background-color: rgb(158, 158, 158);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.challenge-image span {
+    font-size: 85px;
+    font-weight: bold;
+    color: rgb(120, 120, 120);
+}
+
+
+.challenge-content {
+    flex: 1;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.challenge-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.challenge-description {
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+
+}
+
+.join-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: rgb(209, 208, 208);
+    border: 2px solid rgb(19, 19, 19);
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.join-arrow-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
 
 .bike-helpline {
     width: 100%;
