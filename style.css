@@ -1,15 +1,15 @@
-/* global css proprities across the landing page including the hadingss, html, boddy and paragrpahas  */
+/* global css proprities across the landing page */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* Mobile container - this centers the content and sets max-width for larger screensto appear as mobile friendly */
+/* Mobile container - this keeps content centered and sets max-width so it doenst fill larger screens */
 .mobile-container {
     width: 100%;
-    max-width: 480px; /* Typical mobile width - constrains on desktop */
-    margin: 0 auto; /* Centers container on larger screens */
+    max-width: 480px; /* common mobile width */
+    margin: 0 auto; /* centers container on bigger screens */
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25); /* Adds depth to simulate mobile device */
 }
 
@@ -29,19 +29,19 @@ h2,
 h3 {
     color: rgb(0, 0, 0);
     text-align: center;
-    font-family: 'Arial', 'sans-serif','Times New roman';
+    font-family: 'Arial', 'sans-serif','Times New roman'; /*main fonts for headings */
     font-weight: Bold;
 }
 
 p {
     color: rgb(0, 0, 0);
-    font-family: 'Arial', 'sans-serif','Times New roman';
+    font-family: 'Arial', 'sans-serif','Times New roman'; /*main fonts for paragraphs */
     text-align: center;
     font-style: italic;
 }
 
 
-/* Hero Section */
+/* Hero Section with the quote */
 .hero-section {
     width: 100%;
     background-color: rgb(231, 229, 204);
@@ -86,14 +86,14 @@ p {
     width: 100%;
     }
 
-
+/*building icomn*/
 .infrastructure-icon {
     width: 18px;
     height: 18px;
     flex-shrink: 0;
 }
 
-
+/*smaller impaced routes button*/
 .impacted-routes-button {
     display: flex;
     align-items: center;
@@ -113,7 +113,7 @@ p {
     z-index: 999;
 }
 
-/* Impacted routes starburst icon */
+/* Impacted routes danger icon */
 .impacted-icon {
     width: 19px;
     height: 19px;
@@ -154,7 +154,7 @@ p {
 }
 
 
-/* User points/level button  */
+/* button with User points/level info  */
 .user-points {
     border: 2px solid rgb(94, 93, 93);
     border-bottom: 4px solid rgb(94, 93, 93);
@@ -206,10 +206,10 @@ p {
     font-size: 14px;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    flex-shrink: 0;
+    flex-shrink: 0; /* allows icon to not shrink when flex space is limited */
 }
 
-/* Filter button icon's properties */
+/* Filter button icon */
 .filter-icon {
     width: 16px;
     height: 16px;
@@ -217,6 +217,7 @@ p {
 }
 
 
+/* floating button above nav bar to create routes */
 .create-routes-floating-button {
     position: fixed;
     bottom: 95px;
@@ -227,8 +228,8 @@ p {
     justify-content: center;
     gap: 4px;
     background-color: rgb(89, 143, 13);
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 4px;
+    border: 2px solid rgb(0, 0, 0); /*border outline fro the button */
+    border-radius: 4px; /* makes the button more rounded */
     padding: 10px 12px;
     font-family: 'Arial', 'sans-serif';
     font-size: 12px;
@@ -238,7 +239,7 @@ p {
     z-index: 1000; /* this makes sure the button is above teh other elements when scrolling */
 }
 
-
+/* plus "+" icon floating button */
 .floating-button-icon {
     width: 20px;
     height: 20px;
@@ -266,14 +267,14 @@ p {
     margin: 0;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* makes sure the text is centered*/
 }
 
 /*routes grid contianer */
 .route-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Default: 2 columns */
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout + fills the width of the container*/
+    gap: 10px; /* the gap between the route cards */
     padding: 10px;
     width: 100%;
 }
@@ -285,12 +286,12 @@ p {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
     background-color: rgb(255, 255, 255); 
-    overflow: hidden;
+    overflow: hidden; /* hides content that overflows when screen is shrunk */
     min-height: 120px;
 }
 
 
-/* placeholder for route card images */
+/* css proprities for the placeholder of route card images */
 .route-image {
     width: 75px;
     background-color: rgb(152, 166, 185); 
@@ -308,12 +309,24 @@ p {
 
 /*  content area inside oof the route card */
 .route-content {
-    flex: 1;
+    flex: 1; /* allows the content to fill avialable space */
     padding: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-width: 0;
+    position: relative; /* allows share icon to be absolutely positioned */ 
+}
+
+/* Share icon in the route card */
+.share-icon {
+    position: absolute;
+    top: 4px;
+    right: 4px; /* positions the icon in the top-right corner of the route card */
+    width: 18px;
+    height: 18px;
+    color: rgb(0, 0, 0);
+    flex-shrink: 0;
 }
 
 /* Route name heading */
@@ -324,7 +337,7 @@ p {
     margin: 0 0 5px 0;
     text-align: left;
     font-family: 'Arial', 'sans-serif';
-    overflow-wrap: break-word; /* Allows long words to wrap under when screen gets narrower */
+    overflow-wrap: break-word; /* Allows words to wrap under when screen gets narrower */
     line-height: 1.3;
 }
 
@@ -335,7 +348,7 @@ p {
     margin: 0 0 8px 0;
     text-align: left;
     font-family: 'Arial', 'sans-serif';
-    overflow-wrap: break-word; /* Allows text to wrap when screen size gets narrower */
+    overflow-wrap: break-word; /* Allows words to wrap under when screen gets narrower */
 }
 
 /* route Icons container */
@@ -349,7 +362,7 @@ p {
     width: 100%; 
 }
 
-/* Individual icon styling */
+/* Individual icon styling for the emoji icons */
 .route-icons span {
     font-size: 18px;
     display: inline-block;
@@ -368,7 +381,7 @@ p {
 .events-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* adds enough space needed to push 1st elememt ot the elft sdie and 2nd to the right */
     margin-bottom: 6px;
     background-color: rgb(28, 65, 167);
     padding: 10px;
@@ -414,7 +427,7 @@ p {
 
 .event-types {
     font-size: 14px;
-    text-align: left;
+    text-align: left; /* makes sure the text is aligned to the left side*/
     margin: 0;
     color: rgb(253, 250, 230);
 }
@@ -437,7 +450,7 @@ p {
 .event-title-container {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* the gap between the title and the bicycle icon */
 }
 
 .bicycle-icon {
@@ -456,7 +469,7 @@ p {
 
 .event-description {
     font-size: 14px;
-    text-align: left;
+    text-align: left; /* makes sure the text is aligned to the left side*/
     margin: 0;
     font-style: normal;
     color: rgb(0, 0, 0);
@@ -477,7 +490,7 @@ p {
     margin-bottom: 15px;
     background-color: rgb(28, 65, 167);
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 6px; /* makes the header more rounded on the edges */
 }
 
 .challenges-title-container {
@@ -508,7 +521,7 @@ p {
     padding: 6px 12px;
     font-size: 12px;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: uppercase; /* makes all button text uppercase */
 }
 
 .challenge-card {
@@ -564,14 +577,14 @@ p {
 .join-button {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 4px; /* the gap between the join now button and arrow icon */
     background-color: rgb(152, 166, 185);
     border: 2px solid rgb(19, 19, 19);
     border-radius: 4px;
     padding: 6px 12px;
     font-size: 12px;
     font-weight: bold;
-    align-self: flex-start;
+    align-self: flex-start; /* aligns item at teh start of the flex container */
 }
 
 .join-arrow-icon {
@@ -591,7 +604,7 @@ p {
     justify-content: left;
     gap: 10px;
     box-sizing: border-box;
-    position: sticky;
+    position: sticky; /* makes the helpline section stick to the bottom when scrollling*/
     bottom: 80px;
     z-index: 998;
 }
@@ -615,8 +628,8 @@ p {
 
 /* navigation bar container */
 .nav-bar {
-    position: fixed;
-    bottom: 0;
+    position: fixed; /* makes the nav bar stick to the bottom of the screen */
+    bottom: 0; 
     left: 0;
     right: 0;
     background-color: rgb(28, 65, 167);
@@ -631,7 +644,7 @@ p {
     overflow: hidden; /* hides overflowing content */
 }
 
-/* Individual navigation item (icon + label text container) */
+/* nav items container */
 .nav-icon {
     display: flex;
     flex-direction: column;
@@ -650,10 +663,10 @@ p {
     stroke: rgb(253, 250, 230);
 }
 
-/* Navigation bar label's text under the icons */
+/* Navigation bar's label text under the icons */
 .nav-label {
     font-size: 11px;
-    text-align: center;
+    text-align: center; /* makes sure the text is centered */
     color: rgb(253, 250, 230);
     font-family: 'Arial', 'sans-serif';
 }
@@ -690,7 +703,7 @@ p {
     }
 }
 
-/* Changes code at 449px and switches grid to 1 column when screen is too narrow to fit stars rating in the 2-column layout */
+/* Changes code at 449px and switches grid to 1 column when screen is too narrow to fit stars rating in thye column layout */
 @media (max-width: 449px) {
     .route-grid {
         grid-template-columns: 1fr;
