@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+/* Mobile container - this centers the content and sets max-width for larger screensto appear as mobile friendly */
+.mobile-container {
+    width: 100%;
+    max-width: 480px; /* Typical mobile width - constrains on desktop */
+    margin: 0 auto; /* Centers container on larger screens */
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25); /* Adds depth to simulate mobile device */
+}
+
 html {
     overflow-x: hidden; /* Prevents horizontal scrolling when inspecting mobile viewport */
 }
